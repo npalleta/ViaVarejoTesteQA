@@ -9,4 +9,8 @@ module Pages
   def main_page
     @main_page ||= MainPage.new
   end
+
+  def survey_page
+    @survey_page ||= SurveyPage.new
+  end
 end

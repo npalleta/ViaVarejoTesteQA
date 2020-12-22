@@ -5,11 +5,14 @@ Teste para a posição de QA na Via Varejo
 
 * capybara
 * chromedriver-helper
-* cucumber
+* cucumber', '~> 3.2'
+* fivemat
 * geckodriver-helper
-* selenium-webdriver
-* site-prism
+* rcodetools
 * rspec
+* rubocop
+* selenium-webdriver
+* site_prism
 
 ## Desafio
 

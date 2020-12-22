@@ -9,9 +9,9 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-/screenshots/
-/results/reports/
-/results/cucumber_json/
+/screenshots
+/results/reports
+/results/cucumber_json
 
 # Used by dotenv library to load environment variables.
 # .env
