@@ -1,10 +1,6 @@
 # frozen_string_literal: false
 
 # ---
-
-Dado('que eu acesse a página da VV Test') do
-end
-
 Dado('acesse o menu Pesquisa - QA') do
 end
 

@@ -17,6 +17,11 @@ After do |scenario|
   scenario_name = scenario_name.delete('#', '')
   @helper = Helper.new
   # take screenshot if scenario fails,
-  @helper.take_screenshot(scenario_name, 'scenario_failed') if scenario.failed?
+  if scenario.failed?
+    @helper.take_screenshot(scenario_name, 'scenario_failed')
+  # the same but if scenario passes...
+  else
+    @helper.take_screenshot(scenario_name, 'scenario_passed')
+  end
   puts 'O cenário ' + scenario_name + ' foi finalizado!'
 end

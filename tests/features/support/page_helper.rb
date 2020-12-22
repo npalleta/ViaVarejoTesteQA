@@ -9,8 +9,4 @@ module Pages
   def main_page
     @main_page ||= MainPage.new
   end
-
-  def create_account_page
-    @create_account_page ||= CreateAccountPage.new
-  end
 end

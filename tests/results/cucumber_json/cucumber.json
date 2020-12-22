@@ -1,17 +1,11 @@
 [
   {
-    "uri": "features/specs/CT_001_Preenchimento_Pesquisa.feature",
-    "id": "pesquisa-com-o-qa",
+    "uri": "features/specs/CT_000_Access_Site.feature",
+    "id": "acessando-a-url-da-página-da-pesquisa-qa",
     "keyword": "Funcionalidade",
-    "name": "Pesquisa com o QA",
-    "description": "  - Como um recrutador\n  - Quero colher dados da pesquisa \n  - Para fazer análises mais detalhadas do QA",
-    "line": 5,
-    "tags": [
-      {
-        "name": "@CT_001",
-        "line": 4
-      }
-    ],
+    "name": "Acessando a URL da Página da Pesquisa QA",
+    "description": "  - Eu, como usuário, gostaria de acessar a página inicial da Página da Pesquisa QA",
+    "line": 4,
     "comments": [
       {
         "value": "# encoding: utf-8",
@@ -20,16 +14,16 @@
     ],
     "elements": [
       {
-        "id": "pesquisa-com-o-qa;preencher-pesquisa-com-dados-obrigatórios-válidos",
-        "keyword": "Cenário",
-        "name": "Preencher pesquisa com dados obrigatórios válidos",
+        "id": "acessando-a-url-da-página-da-pesquisa-qa;acessar-a-url-da-página-da-pesquisa-qa;;2",
+        "keyword": "Esquema do Cenário",
+        "name": "Acessar a URL da Página da Pesquisa QA",
         "description": "",
-        "line": 11,
+        "line": 14,
         "type": "scenario",
         "tags": [
           {
-            "name": "@CT_001",
-            "line": 4
+            "name": "@CT_000_A",
+            "line": 8
           }
         ],
         "before": [
@@ -39,7 +33,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18223
+              "duration": 16287
             }
           },
           {
@@ -48,67 +42,47 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15527
+              "duration": 14869
             }
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "que eu acesse a página da VV Test",
-            "line": 12,
+            "name": "que eu acesso a \"/\" desejada",
+            "line": 10,
             "match": {
-              "location": "features/specs/CT_001_Preenchimento_Pesquisa.feature:12"
+              "location": "features/step_definitions/main_page_sd.rb:4"
             },
             "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "keyword": "E ",
-            "name": "acesse o menu Pesquisa - QA",
-            "line": 13,
-            "match": {
-              "location": "features/specs/CT_001_Preenchimento_Pesquisa.feature:13"
-            },
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "keyword": "Quando ",
-            "name": "eu preencher todos os campos obrigatórios",
-            "line": 14,
-            "match": {
-              "location": "features/specs/CT_001_Preenchimento_Pesquisa.feature:14"
-            },
-            "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 3600875378
             }
           },
           {
             "keyword": "Então ",
-            "name": "deve ser direcionado para uma página de sucesso",
-            "line": 15,
+            "name": "a \"http://www.lourencodemonaco.com.br/vvtest\" deverá ser apresentada",
+            "line": 11,
             "match": {
-              "location": "features/specs/CT_001_Preenchimento_Pesquisa.feature:15"
+              "location": "features/step_definitions/main_page_sd.rb:8"
             },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 7166876
             }
           }
         ],
         "after": [
           {
             "output": [
-              "O cenário Preencher pesquisa com dados obrigatórios válidos foi finalizado!"
+              "O cenário Acessar a URL da Página da Pesquisa QA, Exemplos (#1) foi finalizado!"
             ],
             "match": {
               "location": "features/support/hooks.rb:6"
             },
             "result": {
               "status": "passed",
-              "duration": 78292
+              "duration": 314699181
             }
           },
           {
@@ -117,7 +91,78 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10308
+              "duration": 77214975
+            }
+          }
+        ]
+      },
+      {
+        "id": "acessando-a-url-da-página-da-pesquisa-qa;acessar-a-url-principal-da-página-da-pesquisa-qa---via-varejo",
+        "keyword": "Cenário",
+        "name": "Acessar a URL principal da Página da Pesquisa QA - Via Varejo",
+        "description": "",
+        "line": 17,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@CT_000_B",
+            "line": 16
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.34.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21558
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.34.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19946
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu acesse a página da VV Test",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/main_page_sd.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2017253583
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "O cenário Acessar a URL principal da Página da Pesquisa QA - Via Varejo foi finalizado!"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 256711491
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.34.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73794575
             }
           }
         ]

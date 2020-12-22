@@ -52,6 +52,22 @@ Capybara.register_driver :selenium do |app|
       service: service,
       options: options
     )
+  elsif BROWSER.eql?('chrome_linux')
+    options = Selenium::WebDriver::Chrome::Options.new(
+      options: { 'excludeSwitches' => %w[enable-automation load-extension] }
+    )
+    options.add_argument('--disable-extensions')
+    options.add_argument('--disable-extensions-file-access-check')
+    options.add_argument('--disable-infobars')
+    options.add_argument('--disable-popup-blocking')
+    options.add_argument('--enable-application-cache')
+    options.add_argument('--reduce-security-for-testing')
+
+    Capybara::Selenium::Driver.new(
+      app,
+      browser: :chrome,
+      options: options
+    )
   elsif BROWSER.eql?('firefox')
     Capybara::Selenium::Driver.new(
       app,
