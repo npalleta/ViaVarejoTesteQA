@@ -39,7 +39,7 @@ DICAS ÚTEIS: <br />
 
 Boa sorte!!!
 
-# Sobre o Código
+## Sobre o Código
 
 Aqui explicarei sobre o padrão adotado para o desenvolvimento. Também abordarei sobre as gems utilizadas.
 
@@ -111,3 +111,16 @@ Vou deixar aqui uma breve explicação sobre as gems adotadas nesse projeto:
 
 - __rubocop__
        - Lint para código Ruby. Traz sugestões de boas práticas de programação (Indentação, clean code...).
+       
+# Os outros arquivos do projeto
+
+**Nesse projeto, existem 2 arquivos substanciais que auxiliam nossa configuração:**
+
+> Um deles é o *cucumber.yml*, encontrado na raíz do projeto. Nele estão os comandos necessários para a execução dos testes. Ali, já temos pré-configurado, utilizando a tag *default* o browser, o relatório e o ambiente que queremos testar. Esse arquivo nos ajuda a reduzir o comando para a execução dos testes.
+
+> O outro arquivo é o *environment.yaml*, encontrado na pasta *support*/**config**. Este arquivo é utilizado como um hash onde podemos organizar dados específicos da nossa arquitetura e economizar em classes ou módulos.
+Nesse caso, utilizamos para armazenar os dados sobre os endereços dos nossos ambientes.
+
+# Comandos para a execução dos testes
+
+> Para rodar os testes é necessário apenas a execução do comando *cucumber* no terminal do seu editor, mas se preferir, poderá usar os comandos  _cucumber -t @CT_00X_X **para os cenários**. Ex: Cenário do Survey - _cucumber -t @CT_001_A.
