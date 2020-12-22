@@ -1,0 +1,127 @@
+[
+  {
+    "uri": "features/specs/CT_001_Preenchimento_Pesquisa.feature",
+    "id": "pesquisa-com-o-qa",
+    "keyword": "Funcionalidade",
+    "name": "Pesquisa com o QA",
+    "description": "  - Como um recrutador\n  - Quero colher dados da pesquisa \n  - Para fazer análises mais detalhadas do QA",
+    "line": 5,
+    "tags": [
+      {
+        "name": "@CT_001",
+        "line": 4
+      }
+    ],
+    "comments": [
+      {
+        "value": "# encoding: utf-8",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "pesquisa-com-o-qa;preencher-pesquisa-com-dados-obrigatórios-válidos",
+        "keyword": "Cenário",
+        "name": "Preencher pesquisa com dados obrigatórios válidos",
+        "description": "",
+        "line": 11,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@CT_001",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.34.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18223
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.34.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15527
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu acesse a página da VV Test",
+            "line": 12,
+            "match": {
+              "location": "features/specs/CT_001_Preenchimento_Pesquisa.feature:12"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "acesse o menu Pesquisa - QA",
+            "line": 13,
+            "match": {
+              "location": "features/specs/CT_001_Preenchimento_Pesquisa.feature:13"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "eu preencher todos os campos obrigatórios",
+            "line": 14,
+            "match": {
+              "location": "features/specs/CT_001_Preenchimento_Pesquisa.feature:14"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deve ser direcionado para uma página de sucesso",
+            "line": 15,
+            "match": {
+              "location": "features/specs/CT_001_Preenchimento_Pesquisa.feature:15"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "O cenário Preencher pesquisa com dados obrigatórios válidos foi finalizado!"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78292
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.34.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10308
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

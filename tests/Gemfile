@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+#---
+source 'https://rubygems.org'
+
+gem 'capybara'
+gem 'chromedriver-helper'
+gem 'cucumber', '~> 3.2'
+gem 'fivemat'
+gem 'geckodriver-helper'
+gem 'rcodetools'
+gem 'rspec'
+gem 'rubocop'
+gem 'selenium-webdriver'
+gem 'site_prism'
