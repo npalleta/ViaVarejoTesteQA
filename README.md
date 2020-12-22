@@ -123,4 +123,4 @@ Nesse caso, utilizamos para armazenar os dados sobre os endereços dos nossos am
 
 # Comandos para a execução dos testes
 
-> Para rodar os testes é necessário apenas a execução do comando *cucumber* no terminal do seu editor, mas se preferir, poderá usar os comandos  _cucumber -t @CT_00X_X **para os cenários**. Ex: Cenário do Survey - _cucumber -t @CT_001_A.
+> Para rodar os testes é necessário apenas a execução do comando *cucumber* no terminal do seu editor, mas se preferir, poderá usar os comandos **cucumber -t @CT_00X_X** para a execução dos cenários. Ex: Cenário do Survey - **cucumber -t @CT_001_A**.
