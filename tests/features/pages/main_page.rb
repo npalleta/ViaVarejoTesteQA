@@ -1,13 +1,13 @@
 # frozen_string_literal: false
 
-require 'rspec'
-require 'site_prism'
+require "rspec"
+require "site_prism"
 
 # --- main_page.rb
 class MainPage < SitePrism::Page
   include RSpec::Matchers
 
-  @@main_url = 'url'
+  @@main_url = "url"
 
   def access_main_page(url_path)
     visit(Settings.get_url(@@main_url, url_path))
@@ -18,7 +18,7 @@ class MainPage < SitePrism::Page
   end
 
   def navigate_to_main_page
-    visit(Settings.get_url(@@main_url, '/'))
-    expect(Capybara.page).to have_title 'VV Test – Página de teste da Via Varejo'
+    visit(Settings.get_url(@@main_url, "/"))
+    expect(Capybara.page).to have_title "VV Test – Página de teste da Via Varejo"
   end
 end
