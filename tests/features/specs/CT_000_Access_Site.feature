@@ -11,7 +11,7 @@
   Então a <pagina_inicial> deverá ser apresentada
   Exemplos:
       | pagina | pagina_inicial                              | 
-      | "/"    | "http://www.lourencodemonaco.com.br/vvtest" | 
+      | '/'    | 'http://www.lourencodemonaco.com.br/vvtest' | 
   
   @CT_000_B
   Cenário: Acessar a URL principal da Página da Pesquisa QA - Via Varejo
