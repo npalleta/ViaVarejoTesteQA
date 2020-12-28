@@ -1,11 +1,11 @@
 # frozen_string_literal: false
 
 # ---
-Dado("depois eu vá para o menu Pesquisa - QA") do
+Dado('depois eu vá para o menu Pesquisa - QA') do
   survey_page.click_on_a_link_pesquisa_qa
 end
 
-Quando("eu preencher todos os campos obrigatórios") do
+Quando('eu preencher todos os campos obrigatórios') do
   survey_page.fill_first_name_textbox
   survey_page.fill_last_name_textbox
   survey_page.fill_email_address_textbox
@@ -20,7 +20,7 @@ Quando("eu preencher todos os campos obrigatórios") do
   survey_page.click_register_sbmt_button
 end
 
-Então("deverei ser direcionado para uma página de sucesso") do
+Então('deverei ser direcionado para uma página de sucesso') do
   survey_page.validate_success_page
   sleep 20
 end

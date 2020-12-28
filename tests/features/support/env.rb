@@ -25,8 +25,7 @@ Capybara.register_driver :selenium do |app|
   # capabilities = Selenium::WebDriver::Remote::Capabilities.chrome
   # capabilities['chromeOptions'] = { 'prefs' => preferences }
 
-  chromedriver_path = File.join(File.absolute_path('./', File.dirname(__FILE__)),
-                                '/drivers/chrome/chromedriver.exe')
+  chromedriver_path = File.join(File.absolute_path('./', File.dirname(__FILE__)), '/drivers/chrome/chromedriver.exe')
 
   chrome_bin = File.join(File.absolute_path('D:/Program Files (x86)/Google/Chrome/Application', File.dirname(__FILE__)),
                          'chrome.exe')
